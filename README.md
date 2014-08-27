@@ -7,7 +7,7 @@ Installs MacDown. The open source Markdown editor for OS X.
 ## Usage
 
 ```puppet
-include macdown
+class { 'macdown': version => '0.2.3' }
 ```
 
 ## Required Puppet Modules

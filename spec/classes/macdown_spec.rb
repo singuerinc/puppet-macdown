@@ -3,11 +3,13 @@ require 'spec_helper'
 # Check other boxen modules for examples
 # or read http://rspec-puppet.com/tutorial/
 describe 'macdown' do
+
+  version = '0.2.3'
+
   it do
     should contain_package("Macdown").with({
         :provider => 'compressed_app',
-        :flavor   => 'zip'
-        :source   => "http://macdown.uranusjr.com/download/latest"
+        :source   => "https://github.com/uranusjr/macdown/releases/download/v#{version}/MacDown.app.zip"
     })
   end
 end

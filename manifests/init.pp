@@ -4,10 +4,9 @@
 #
 #  include macdown
 #
-class macdown() {
+class macdown($version='0.2.3') {
   package { 'Macdown':
     provider => 'compressed_app',
-    flavor   => 'zip',
-    source   => 'http://macdown.uranusjr.com/download/latest'
+    source   => "https://github.com/uranusjr/macdown/releases/download/v${version}/MacDown.app.zip"
   }
 }
