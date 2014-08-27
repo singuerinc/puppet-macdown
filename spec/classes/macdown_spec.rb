@@ -7,7 +7,7 @@ describe 'macdown' do
     should contain_package("Macdown").with({
         :provider => 'compressed_app',
         :flavor   => 'zip'
-        :source   => "http://macdown.uranusjr.com/download/latest/"
+        :source   => "http://macdown.uranusjr.com/download/latest"
     })
   end
 end
