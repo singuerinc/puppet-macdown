@@ -8,6 +8,6 @@ class macdown() {
   package { 'Macdown':
     provider => 'compressed_app',
     flavor   => 'zip',
-    source   => 'https://github.com/uranusjr/macdown/releases/download/v0.2.3/MacDown.app.zip'
+    source   => 'http://macdown.uranusjr.com/download/latest/'
   }
 }
